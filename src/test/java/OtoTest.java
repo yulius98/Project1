@@ -36,7 +36,7 @@ public class OtoTest {
         homepage.manage().window().maximize();
         //wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[@id='nava']")));
     }
-    @Test (priority = 0)
+    @Test (priority = 1)
     public void Signuptest () throws InterruptedException {
         homepage.findElement(By.xpath("//a[.='Sign up']")).click();
         Thread.sleep(1000);
@@ -61,7 +61,7 @@ public class OtoTest {
         }
 
     }
-    @Test (priority = 1)
+    @Test (priority = 2)
     public void LoginTest() throws InterruptedException {
         homepage.findElement(By.xpath("//a[.='Log in']")).click();
         Thread.sleep(1000);
@@ -80,7 +80,7 @@ public class OtoTest {
             System.out.println("Login successful");
         }
     }
-    @Test (priority = 2)
+    @Test (priority = 3)
     public void AddCart() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(homepage, Duration.ofSeconds(120));
 
@@ -131,7 +131,7 @@ public class OtoTest {
 
 
     }
-    @Test (priority = 3)
+    @Test (priority = 4)
     public void Payment() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(homepage, Duration.ofSeconds(1000));
 
